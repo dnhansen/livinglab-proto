@@ -1,0 +1,1 @@
+public record Cow(string Id, string Race);

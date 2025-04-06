@@ -1,6 +1,19 @@
 var builder = WebApplication.CreateBuilder(args);
+
+// DEPENDENCY INJECTION
+
+builder.Services.AddPresentation();
+builder.Services.AddDomain();
+builder.Services.AddInfrastructure();
+
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+
+// MIDDLEWARE PIPELINE
+
+
+// ENDPOINTS
+
+app.MapCowEndpoints();
 
 app.Run();
