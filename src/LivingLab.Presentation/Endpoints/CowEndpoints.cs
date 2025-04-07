@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Builder; // for MapGet, MapPost, etc.
+
 public static class CowEndpoints
 {
     public static IEndpointRouteBuilder MapCowEndpoints(this IEndpointRouteBuilder routes)
